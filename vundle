@@ -1,0 +1,18 @@
+set nocompatible
+
+if empty(glob('~/.vim/bundle/Vundle.vim'))
+  silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  autocmd VimEnter * PluginInstall 
+  autocmd VimEnter * source $MYVIMRC
+endif
+
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" Plugins go here!
+call vundle#end()
+
+filetype plugin indent on    " required
