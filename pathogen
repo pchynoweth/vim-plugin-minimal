@@ -7,3 +7,5 @@ if empty(glob('~/.vim/autoload/pathogen.vim'))
 endif
 
 execute pathogen#infect()
+
+" vim: set filetype=vim:

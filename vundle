@@ -16,3 +16,5 @@ Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
 
 filetype plugin indent on    " required
+
+" vim: set filetype=vim:
